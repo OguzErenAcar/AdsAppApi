@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/0fa719a9-414b-40c9-a8ff-8bd711b8a4ba/resourceGroups/AppGroup/providers/Microsoft.Web/sites/AdsApiApp",
+    "appService.deploySubpath": "."
+}
