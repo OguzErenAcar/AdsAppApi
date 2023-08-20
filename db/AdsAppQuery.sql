@@ -48,6 +48,15 @@ AdsID_ INTEGER NOT NULL,
 FOREIGN KEY (AdsID_) REFERENCES Ads (AdsID)
 )
 
+CREATE TABLE Category (
+    CategoryID INT IDENTITY(1, 1) PRIMARY KEY,
+    CategoryName VARCHAR(MAX) NOT NULL,
+    CategoryPhotoUrl VARCHAR(MAX) NOT NULL
+);
+
+ALTER TABLE Ads  
+FOREIGN KEY (CategoryID_) REFERENCES Category (CategoryID);  
+
 ALTER TABLE Profils 
 ADD UserID_ INTEGER,
 FOREIGN KEY (UserID_) REFERENCES Users (UserID)
