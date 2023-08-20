@@ -1,3 +1,4 @@
+USE ads_app;
 
 CREATE TABLE Users(
 UserID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -16,8 +17,7 @@ AdsName VARCHAR(50) NOT NULL,
 AdsPrice VARCHAR(50) NOT NULL,
 AdsDescription TEXT ,
 AdsPhotoPaths TEXT NOT NULL,
-FOREIGN KEY (UserID_) REFERENCES Users (UserID),
-
+FOREIGN KEY (UserID_) REFERENCES Users (UserID)
 );
   
 CREATE TABLE Profils (
@@ -27,7 +27,7 @@ Age INTEGER NOT NULL,
 Gender VARCHAR(8) ,
 PPurl TEXT ,
 Number INTEGER  NOT NULL,
-    CONSTRAINT uc_Number UNIQUE (Number),
+    CONSTRAINT uc_Number UNIQUE (Number)
 
 );
 
