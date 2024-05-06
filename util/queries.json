@@ -1,0 +1,8 @@
+{
+    "ACCOUNT":{
+        "SIGNIN":"SELECT * FROM Users",
+        "LOGIN":"",
+        "DELETE_ACCOUNT":"",
+        "GET_ACCOUNT":""
+    }
+}
