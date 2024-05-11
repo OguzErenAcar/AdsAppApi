@@ -8,4 +8,4 @@ To install the necessary dependencies, run the following command:
 
 ```sh
 npm i 
-npm install
+npm start
